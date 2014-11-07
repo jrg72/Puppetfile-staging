@@ -1,5 +1,7 @@
 forge "http://forge.puppetlabs.com"
 
+mod "richardc/datacat"
+mod "puppetlabs/concat"
 mod "puppetlabs/stdlib"
 mod "puppetlabs/mysql"
 mod "puppetlabs/haproxy" 
