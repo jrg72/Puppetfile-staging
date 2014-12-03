@@ -1,6 +1,8 @@
 ---
 classes:
- - 'profile::puppetmaster'
+ - 'profile::base'
+ - 'profile::mcollective'
+ - 'profile::ntp_server'
 
 ntp::servers:
   - 0.us.pool.ntp.org
