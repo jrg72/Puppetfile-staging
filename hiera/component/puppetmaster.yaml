@@ -1,10 +1,8 @@
 ---
 classes:
- - 'profile::base'
+ - 'profile::puppetmaster'
 
 ntp::servers:
   - 0.us.pool.ntp.org
   - 1.us.pool.ntp.org
 
-ntp::udlc:
-  - true
