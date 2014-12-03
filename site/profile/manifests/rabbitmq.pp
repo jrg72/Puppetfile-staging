@@ -2,6 +2,10 @@ class profile::rabbitmq {
   include erlang
   include rabbitmq
   
+  class { '::rabbitmq':
+    admin_enable  => true,
+  }
+  
   rabbitmq_user { 'mcollective_admin':
     admin    => true,
     password => 'bar',
