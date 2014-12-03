@@ -5,7 +5,7 @@ class profile::rabbitmq {
   class { '::rabbitmq':
     manage_repos  => true,
     admin_enable  => true,
-  }
+  } ->
   
   rabbitmq_user { 'mcollective_admin':
     admin    => true,
