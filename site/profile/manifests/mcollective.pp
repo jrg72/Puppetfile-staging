@@ -1,6 +1,5 @@
 class profile::mcollective {
-    $packages = [ 'mcollective',
-                'mcollective-service-agent',
+    $packages = [ 'mcollective-service-agent',
                 'mcollective-package-agent',
                 'mcollective-sysctl-data',
                 'mcollective-nettest-agent',
