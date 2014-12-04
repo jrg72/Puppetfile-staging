@@ -27,10 +27,6 @@ class profile::base {
 
   else {
     notify {"Bare Metal Box, setting route to AWS.":}
-    Network_route { 
-      interface => 'bond0',
-      ensure    => 'purged'
-    } ->
     network_route { '10.0.0.0/8':
       ensure    => 'present',
       gateway   => "${::network_internal_gw}",
