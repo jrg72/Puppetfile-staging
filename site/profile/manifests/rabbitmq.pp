@@ -1,6 +1,8 @@
 class profile::rabbitmq {
   include erlang
   include rabbitmq
+
+  include rabbitmq::params
   
   class { '::rabbitmq':
     manage_repos  => false,
