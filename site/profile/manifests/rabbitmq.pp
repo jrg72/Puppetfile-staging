@@ -14,12 +14,12 @@ class profile::rabbitmq {
   
   rabbitmq_user { 'mcollective_admin':
     admin    => true,
-    password => 'bar',
+    password => 'marionnette',
   } ->
 
   rabbitmq_user { 'mcollective':
     admin    => true,
-    password => 'test',
+    password => 'marionnette',
   } ->
 
   rabbitmq_vhost { '/mcollective':
@@ -41,21 +41,21 @@ class profile::rabbitmq {
   rabbitmq_exchange { 'mcollective_broadcast@/mcollective':
     ensure   => present,
     user     => 'mcollective_admin',
-    password => 'bar',
+    password => 'marionnette',
     type     => 'topic',
   }
 
   rabbitmq_exchange { 'mcollective_directed@/mcollective':
     ensure   => present,
     user     => 'mcollective_admin',
-    password => 'bar',
+    password => 'marionnette',
     type     => 'direct',
   }
 
   rabbitmq_exchange { 'mcollective_reply@/mcollective':
     ensure   => present,
     user     => 'mcollective_admin',
-    password => 'bar',
+    password => 'marionnette',
     type     => 'direct',
   }
 
