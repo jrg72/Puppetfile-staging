@@ -22,11 +22,11 @@ class profile::base {
   }
 
   if str2bool("$is_virtual") {
-    notice("Virtual Machine, not setting route to AWS.")
+    notify {"Virtual Machine, not setting route to AWS.":}
   }
 
   else {
-    notice("Bare Metal Box, setting route to AWS."),
+    notify {"Bare Metal Box, setting route to AWS.":},
     network_route { '172.17.64.0/19':
       ensure    => 'present',
       gateway   => "${::network_internal_gw}
