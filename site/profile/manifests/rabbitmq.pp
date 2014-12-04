@@ -3,7 +3,7 @@ class profile::rabbitmq {
   include rabbitmq
   
   class { '::rabbitmq':
-    manage_repos  => true,
+    manage_repos  => false,
     admin_enable  => true,
   } ->
   
