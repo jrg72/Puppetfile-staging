@@ -5,8 +5,11 @@ class profile::rabbitmq {
   include rabbitmq::params
   
   class { '::rabbitmq':
-    manage_repos  => false,
+    manage_repos  => true,
     admin_enable  => true,
+    stomp_ensure  => true,
+    config_stomp  => true,
+    stomp_port    => '61613',
   } ->
   
   rabbitmq_user { 'mcollective_admin':
