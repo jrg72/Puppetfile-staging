@@ -5,3 +5,8 @@ class profile::mcollective {
     }
 }
 
+class profile::mcollective::client {
+    class { '::mcollective':
+        client           => true,
+    }
+}
