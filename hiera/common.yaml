@@ -1,6 +1,7 @@
 ---
 classes:
  - 'profile::base'
+ - 'profile::mcollective'
 
 ntp::servers:
   - dxstg-ops-puppet01.devaws.dataxu.net

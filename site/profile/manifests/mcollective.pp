@@ -16,8 +16,3 @@ class profile::mcollective {
     package { $packages : ensure => latest }
 }
 
-class profile::mcollective::client {
-    class { '::mcollective':
-        client           => true,
-    }
-}
