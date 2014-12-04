@@ -26,16 +26,15 @@ class profile::base {
   }
 
   else {
-    notify {"Bare Metal Box, setting route to AWS.":},
+    notify {"Bare Metal Box, setting route to AWS.":}
     network_route { '172.17.64.0/19':
       ensure    => 'present',
-      gateway   => "${::network_internal_gw}
+      gateway   => "${::network_internal_gw}",
       interface => 'bond0',
       netmask   => '19',
       network   => '172.17.64.0',
     }
   }
-
 
 }
 
