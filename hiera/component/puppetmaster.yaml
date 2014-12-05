@@ -3,7 +3,7 @@ classes:
  - 'role::puppetmaster'
 
 ntp::udlc:
-  'true'
+  true
 
 ntp::restrict:
   - '172.17.68.0 mask 255.255.252.0 nomodify notrap'
