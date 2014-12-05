@@ -6,7 +6,6 @@ class profile::mcollective {
 
   $plugins = [  'service',
                 'package',
-                'sysctl',
                 'nettest',
                 'puppet',
                 'filemgr',
