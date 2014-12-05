@@ -2,6 +2,13 @@
 classes:
  - 'role::puppetmaster'
 
+ntp::udlc:
+  - 'true'
+
+ntp::restrict:
+  - '172.17.68.0 mask 255.255.252.0 nomodify notrap'
+  - '10.0.0.0 mask 255.0.0.0 nomodify notrap'
+
 ntp::servers:
   - 0.us.pool.ntp.org
   - 1.us.pool.ntp.org
