@@ -2,7 +2,7 @@
 classes:
  - 'role::puppetmaster'
 
-ntp::udlc:
+ntp::params::udlc:
   - 'true'
 
 ntp::restrict:
