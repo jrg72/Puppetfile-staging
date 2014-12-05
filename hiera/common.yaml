@@ -8,3 +8,12 @@ ntp::servers:
   - 0.us.pool.ntp.org
   - 1.us.pool.ntp.org
 
+mcollective::plugin:
+  - 'service'
+  - 'package'
+  - 'sysctl'
+  - 'nettest'
+  - 'puppet'
+  - 'filemgr'
+  - 'iptables'
+
